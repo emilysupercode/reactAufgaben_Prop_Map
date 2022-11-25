@@ -1,38 +1,101 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 4rem;
+  border: 1px solid midnightblue;
+  margin: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  font-size: 3rem;
+  background-color: lavender;
+  color: rgb(99, 0, 141);
+  padding: 10px;
+  margin: 10px;
+  width: 30%;
+  border: 3px solid midnightblue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todoList {
+  margin: 10px;
+  width: 30%;
+  padding: 0 20px 20px 20px;
+  background-color: lemonchiffon;
+  color: rgb(99, 0, 141);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.movieDiv {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin: 20px;
+}
+
+.singleMovieDiv {
+  background-color: midnightblue;
+  color: powderblue;
+  padding: 10px;
+  text-align: center;
+}
+
+.singleMovieDiv p {
+  padding: 10px;
+}
+
+.movieGenreList {
+  display: flex;
+  flex-direction: column;
+}
+
+.movieTitle {
+  font-weight: bold;
+}
+
+.genreList {
+  list-style-type: none;
+}
+
+.allProductsSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 50px;
+  gap: 50px;
+}
+
+.singleProductDiv img {
+  width: 100%;
+}
+
+.singleProductDiv {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.productName,
+.productPrice {
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buyNowButton {
+  width: 150px;
+  height: 50px;
+  font-size: 1.4rem;
+  border: 2px solid crimson;
+  background-color: crimson;
+  color: whitesmoke;
+  border-radius: 10px;
+}
+
+.buyNowButton:hover {
+  background-color: whitesmoke;
+  color: crimson;
 }
